@@ -1,0 +1,12 @@
+%ol.microposts
+  .row
+    = form_tag(:users, method: "get") do
+      %div{align: "center"}
+        = text_field_tag "search", params[:search], placeholder: "Enter Keywords"
+        %br/
+        = submit_tag "Search", name: nil, class: "btn-custom-darken"
+        %br/
+        %br/
+  - @users.each do |user|
+    = render user
+  = will_paginate @users

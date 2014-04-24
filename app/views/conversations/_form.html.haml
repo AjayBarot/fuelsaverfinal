@@ -1,0 +1,10 @@
+= form_for(:conversation, url: :conversations) do |f|
+  = f.text_field :recipients, placeholder: "Enter email of sender"
+  %br
+  = f.text_field :subject, placeholder: "Mention your Name"
+  %br
+  = f.text_field :body, placeholder: "Body"
+  %br
+  .form-actions
+    = f.button :submit, class: 'btn-primary'
+    = submit_tag 'Cancel', type: :reset, class: 'btn btn-danger'
