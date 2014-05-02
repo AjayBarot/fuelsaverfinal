@@ -1,10 +1,10 @@
 var geocoder;
 var map;
 var marker;
-
+Turbolinks.enableTransitionCache();
 // initialise the google maps objects, and add listeners
 function gmaps_init(){
-
+  
   // center of the universe
   var latlng = new google.maps.LatLng(20.593684,78.96288);
 

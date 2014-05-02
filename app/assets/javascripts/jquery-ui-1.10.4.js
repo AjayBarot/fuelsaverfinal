@@ -4,7 +4,7 @@
 * Copyright 2014 jQuery Foundation and other contributors; Licensed MIT */
 
 (function( $, undefined ) {
-
+Turbolinks.enableTransitionCache();
 var uuid = 0,
 	runiqueId = /^ui-id-\d+$/;
 

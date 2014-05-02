@@ -6,3 +6,4 @@ $(".hello2").click(function(){
 $(".hell").show();
 });	
 });
+Turbolinks.enableTransitionCache();
