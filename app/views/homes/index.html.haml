@@ -1,13 +1,13 @@
 - if user_signed_in?
   .body
-  .row
-    %aside.span5
-      %section= render 'shared/user_info'
-      %section= render 'shared/stats'
-      %section= render 'shared/request_form'
-    .span7
-      %h3 Posted Trip
-      = render 'shared/feed'
+    .row
+      %aside.span5
+        %section= render 'shared/user_info'
+        %section= render 'shared/stats'
+        %section= render 'shared/request_form'
+      .span7
+        %h3 Posted Trip
+        = render 'shared/feed'
 - elsif admin_signed_in?
   = render 'users/foradmin'
   = will_paginate @users
@@ -25,7 +25,7 @@
               %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
               %li{"data-slide-to" => "3", "data-target" => "#myCarousel"}
             .carousel-inner
-              .active.item
+              .item.active
                 = link_to image_tag("paris-traffic.jpg", alt: "Rails", size: "600x400")
               .item 
                 = link_to image_tag("rails.png", alt: "Rails", size: "300x400")
@@ -33,5 +33,7 @@
                 = link_to image_tag("actcarpool_img.jpg", alt: "Rails", size: "500x400")
               .item
                 = link_to image_tag("lets.jpg", alt: "Rails", size: "350x600")
-            %a.carousel-control.left{"data-slide" => "prev", href: "#myCarousel.carousel.slide"} 
-            %a.carousel-control.right{"data-slide" => "next", href:"#myCarousel.carousel.slide"} 
+            %a.carousel-control.left{"data-slide" => "prev", href: "#myCarousel"}
+              %span.glyphocon.glyphicon-chevron-left 
+            %a.carousel-control.right{"data-slide" => "next", href: "#myCarousel"}
+              %span.glyphicon.glyphicon-chevron-right 
