@@ -20,7 +20,7 @@
         %div{align: "center"}
           #myCarousel.carousel.slide
             %ol.carousel-indicators
-              %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
+              %li.active{"data-slide-to" => "0","data-target" => "#myCarousel"}
               %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
               %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
               %li{"data-slide-to" => "3", "data-target" => "#myCarousel"}
@@ -33,5 +33,5 @@
                 = link_to image_tag("actcarpool_img.jpg", alt: "Rails", size: "500x400")
               .item
                 = link_to image_tag("lets.jpg", alt: "Rails", size: "350x600")
-            %a.carousel-control.left{"data-slide" => "prev", href: "#myCarousel"} 
-            %a.carousel-control.right{"data-slide" => "next", href: "#myCarousel"} 
+            %a.carousel-control.left{"data-slide" => "prev", href: "#myCarousel.carousel.slide"} 
+            %a.carousel-control.right{"data-slide" => "next", href:"#myCarousel.carousel.slide"} 

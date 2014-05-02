@@ -7,6 +7,7 @@ Authdemo::Application.configure do
   config.cache_classes = false
   # Do not eager load code on boot.
   config.eager_load = false
+  config.assets.raise_production_errors = true
 
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true

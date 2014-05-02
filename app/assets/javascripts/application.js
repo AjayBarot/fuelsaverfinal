@@ -15,5 +15,4 @@
 //= require bootstrap
 //= require bootstrap-datepicker
 //= require turbolinks
-//= require mapsapi
 //= require_tree .

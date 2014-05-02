@@ -11,7 +11,9 @@ gem 'geocoder'
 
 gem 'bootstrap-datepicker-rails', :git => 'git://github.com/Nerian/bootstrap-datepicker-rails.git'
 
-gem 'twitter-bootstrap-rails'
+gem 'bootstrap-sass', '2.3.2.0'
+
+gem 'sprockets', '2.11.0'
 
 gem 'rmagick'
 

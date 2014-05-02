@@ -1,7 +1,6 @@
 var geocoder;
 var map;
 var marker;
-Turbolinks.enableTransitionCache();
 // initialise the google maps objects, and add listeners
 function gmaps_init(){
   

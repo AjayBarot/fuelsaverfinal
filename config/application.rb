@@ -8,7 +8,7 @@ Bundler.require(:default, Rails.env)
 
 module Authdemo
   class Application < Rails::Application
-
+    config.serve_static_assets = true
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
     #config.middleware.use "PDFKit::Middleware", :print_media_type => true
     # Settings in config/environments/* take precedence over those specified here.
