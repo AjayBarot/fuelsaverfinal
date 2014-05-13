@@ -18,22 +18,17 @@
     %br
       %br
         %div{align: "center"}
-          #myCarousel.carousel.slide
-            %ol.carousel-indicators
-              %li.active{"data-slide-to" => "0","data-target" => "#myCarousel"}
-              %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
-              %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
-              %li{"data-slide-to" => "3", "data-target" => "#myCarousel"}
+          #mainBanner.carousel.slide{"data-ride" => "carousel"}
             .carousel-inner
               .item.active
-                = link_to image_tag("paris-traffic.jpg", alt: "Rails", size: "600x400")
+                %img.slidImageSize{src: "https://files.one.ubuntu.com/8sBvVp4ZQ0-4jrQ_PlTe4w:6rXdmDm5Q8OZlrHWA0k47A"}
               .item 
-                = link_to image_tag("rails.png", alt: "Rails", size: "300x400")
+                %img.slidImageSize{src: "https://files.one.ubuntu.com/8sBvVp4ZQ0-4jrQ_PlTe4w:SbWYRzWWSDSVziVKHfbQNw"}
               .item
-                = link_to image_tag("actcarpool_img.jpg", alt: "Rails", size: "500x400")
+                %img.slidImageSize{src: "https://files.one.ubuntu.com/8sBvVp4ZQ0-4jrQ_PlTe4w:odJSA_buRQK3uzGLc5pdIA"}
               .item
-                = link_to image_tag("lets.jpg", alt: "Rails", size: "350x600")
-            %a.carousel-control.left{"data-slide" => "prev", href: "#myCarousel"}
-              %span.glyphocon.glyphicon-chevron-left 
-            %a.carousel-control.right{"data-slide" => "next", href: "#myCarousel"}
-              %span.glyphicon.glyphicon-chevron-right 
+                %img.slidImageSize{src: "https://files.one.ubuntu.com/8sBvVp4ZQ0-4jrQ_PlTe4w:n8LoQxTsSKqY6JFaFRYaIA"}
+            %a.carousel-control.left{"data-slide" => "prev", href: "#mainBanner"}
+              %span.glyphicon.glyphicon-chevron-left
+            %a.carousel-control.right{"data-slide" => "next", href: "#mainBanner"}
+              %span.glyphicon.glyphicon-chevron-right
